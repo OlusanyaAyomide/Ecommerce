@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+
+
+.toggle-button{
+  @apply flex h-[48px] items-center md:hidden
+}
+.input{
+  @apply border w-full rounded-md rounded-tr-none rounded-br-none pl-4 py-2 outline-none focus:border-2
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #edfafa 0.89%,
+    #3b464e 17.23%,
+    #5b758b 42.04%,
+    #4d7c92 55.12%,
+    #448cad 71.54%,
+    #33a3cf 100%
+  )
+}
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #c1eef0 51.94%,
+    #bedce0 90.29%
+  );
+}
+
+.container{
+  @apply max-w-screen-2xl mx-auto px-4 md:px-6
+}
+.row{
+  @apply flex flex-wrap
+}
+.cover-image{
+  @apply h-full w-full object-contain
+}
+.dark-cover{
+  @apply before:inset-0 before:w-full before:h-full before:absolute
+}
+.style-heading{
+  @apply text-[#5858ec]  text-[16px] mb-5 font-semibold underline decoration-wavy decoration-[1px] underline-offset-4 decoration-[#5858ec]
+}
+.header-design{
+  @apply before:bg-[#5858ec] before:absolute before:w-8 before:h-8 before:top-[6px] before:left-16 before:rotate-45 before:-z-50
+}
+
+@tailwind utilities;
